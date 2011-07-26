@@ -1,6 +1,6 @@
 class TestController < ApplicationController
-  def index
+  def with_extension
     @instance_var = 'OK'
-    render 'index', :locals => { :local_var => 'OK' }
+    render 'with_extension', :locals => { :local_var => 'OK' }
   end
 end

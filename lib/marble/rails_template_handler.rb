@@ -16,9 +16,6 @@ class Marble
   # 
   # Marble loads this module only if it can find `ActionView`.
   class RailsTemplateHandler
-    class_attribute :default_format
-    self.default_format = Mime::JSON
-    
     # Compile the Rails template.
     # 
     # @param [Class] template the Rails template class

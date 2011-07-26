@@ -1,3 +1,4 @@
 MarbleApp::Application.routes.draw do
-  root :to => 'test#index'
+  match 'with_extension' => 'test#with_extension'
+  match 'without_extension' => 'test#without_extension'
 end
