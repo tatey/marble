@@ -64,6 +64,12 @@ view:
 
 See the `Marble::RailsTemplateHandler` documentation for more details.
 
+## Tests ##
+
+	gem install bundler
+	bundle install; bundle install --gemfile test/rails/Gemfile
+	rake test
+
 ## Note on Patches/Pull Requests ##
 
 * Fork the project.
