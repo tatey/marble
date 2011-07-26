@@ -1,8 +1,8 @@
 class Marble
   # Rails plugin for using Marble as a template handler.
   # 
-  # Marble has three output formats: text, JSON, and YAML. The template
-  # handler calls `to_s`, `to_json`, and `to_yaml` for each format,
+  # Marble has three output formats: text, JSON, XML and YAML. The template
+  # handler calls `to_s`, `to_json`, `to_xml` and `to_yaml` for each format,
   # respectively.
   # 
   # Marble sets up a builder for you; simply use the `marble` variable to
@@ -29,6 +29,8 @@ class Marble
       
       if template.formats.include?(:yaml)
         compiled += 'to_yaml'
+      elsif template.formats.include?(:xml)
+        compiled += 'to_xml'
       elsif template.formats.include?(:json)
         compiled += 'to_json'
       else
