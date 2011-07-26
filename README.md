@@ -1,8 +1,8 @@
 # marble [![StillMaintained Status](http://stillmaintained.com/CapnKernul/marble.png)](http://stillmaintained.com/CapnKernul/marble) [![Build Status](http://travis-ci.org/CapnKernul/marble.png)](http://travis-ci.org/CapnKernul/marble) #
 
 Marble is a Ruby object builder. It makes generating complex Ruby objects, and
-by extension JSON and YAML, much more readable. It's especially useful for Rails
-JSON API templates.
+by extension JSON, XML and YAML, much more readable. It's especially useful for Rails
+API templates.
 
 ## Installation ##
 
@@ -42,15 +42,15 @@ amount of lines:
       m.foo 'bar'
     end # => { 'foo' => 'bar' }
 
-The returned value can be converted to JSON and YAML, giving you a really
-concise way of creating JSON and YAML templates for API's.
+The returned value can be converted to JSON, XML and YAML, giving you a really
+concise way of creating templates for API's.
 
 See the `Marble` documentation for more details.
 
 ## Usage with Rails ##
 
 Marble provides a template handler for Rails. It supports object literal, JSON,
-and YAML output formats. Name your view template with the extension `marble`.
+XML and YAML output formats. Name your view template with the extension `marble`.
 The template creates a builder with the name `marble` for you to use. You can
 rename it using the block parameter. For example, in order to generate a JSON
 view:

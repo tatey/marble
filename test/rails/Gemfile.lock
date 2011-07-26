@@ -41,7 +41,6 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.5.0)
-    json (1.5.1)
     mail (2.2.15)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -80,7 +79,6 @@ PLATFORMS
 
 DEPENDENCIES
   autotest (~> 4.4)
-  json (~> 1.5)
   marble!
   minitest (~> 2.0)
   mocha (~> 0.9)
